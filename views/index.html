@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/public/css/common.css">
+</head>
+<body>
+  <div id="index">
+    <a class="botton" href="/students/new">添加</a>
+    <div class="list">
+      <div class="item">
+        <div>#</div>
+        <div>姓名</div>
+        <div>性别</div>
+        <div>年龄</div>
+        <div>爱好</div>
+      </div>
+      {{ each data }}
+      <div class="item">
+        <div>{{ $value.id }}</div>
+        <div>{{ $value.name }}</div>
+        <div>{{ $value.gender }}</div>
+        <div>{{ $value.age }}</div>
+        <div>{{ $value.hobbies }}</div>
+      </div>
+      {{ /each }}
+    </div>
+  </div>
+</body>
+</html>

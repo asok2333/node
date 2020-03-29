@@ -1,0 +1,19 @@
+.botton {
+    display: block;
+    width: 80px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    line-height: 20px;
+    background: #39b6ff;
+    color: #ffffff;
+}
+#index .item {
+    display: flex;
+}
+#index .item div {
+    border: 1px solid #333;
+    padding: 5px;
+    flex: 1 1;
+    text-align: center;
+}
